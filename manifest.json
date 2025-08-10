@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Quickie",
+    "version": "1.0",
+    "description": "Quickly navigate through your ChatGPT prompts.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+       "matches": [
+  "https://chat.openai.com/*",
+  "https://chatgpt.com/*"
+],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
